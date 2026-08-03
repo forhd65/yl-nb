@@ -576,7 +576,7 @@
               "key": "采集聚合追剧py",
               "name": "采集聚合追剧py",
               "type": 3,
-              "api": "./py/采集聚合追剧.py",
+              "api": "./采集聚合追剧.py",
               "searchable": 1,
               "changeable": 1,
               "quickSearch": 1,
@@ -587,7 +587,7 @@
             "key": "短剧聚合",
             "name": "短剧聚合",
             "type": 3,
-            "api": "./js/短剧聚合.js"
+            "api": "./短剧聚合.js"
             },
 			#{
             #    "key": "fy",
