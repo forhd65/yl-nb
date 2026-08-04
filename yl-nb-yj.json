@@ -26,7 +26,7 @@
             }
         }, {
             "key": "csp_iqiyi",
-            "name": "👌爱qi艺[官源1080P]",
+            "name": "👌qiqi[1080P]",
             "type": 3,
             "api": "csp_iqiyi",
             "searchable": 1,
@@ -35,7 +35,7 @@
             "jar": "./琪琪家.jar"
         }, {
             "key": "csp_mgtv",
-            "name": "👌芒guotv[官源1080P&&4k]",
+            "name": "👌guoguo[1080P&&4k]",
             "type": 3,
             "api": "csp_mgtv",
             "searchable": 1,
@@ -44,7 +44,7 @@
             "jar": "./果果家.jar"
         }, {
             "key": "csp-youku",
-            "name": "👌youku[官源1080P]",
+            "name": "👌kuku[1080P]",
             "type": 3,
             "api": "csp_youku",
             "searchable": 1,
@@ -53,13 +53,13 @@
             "jar": "./库库家.jar"
         }, {
             "key": "爱腾讯",
-            "name": "👌腾xun[官源1080P&&4k]",
+            "name": "👌tengteng[1080P&&4k]",
             "type": 3,
             "api": "./drpy2.min.js",
             "ext": "./qq.js"
         }, {
             "key": "疼疼PY",
-            "name": "👌腾迅备丨[官源1080P&&4k]",
+            "name": "👌tengtengbei丨[1080P&&4k]",
             "api": "./txsp.py",
             "filterable": 1,
             "quickSearch": 1,
