@@ -406,7 +406,17 @@
                 "quickSearch": 1,
                 "filterable": 1,
                 "genre": "shortdrama"
-            }, {
+            }, 
+			 {
+            "key": "🔴果PY",
+            "name": "👌🔴果丨[短剧]",
+            "api": "./hongguo.py",
+            "filterable": 1,
+            "quickSearch": 1,
+            "searchable": 1,
+            "type": 3
+        },
+			{
                 "key": "剧圈圈⁹⁹",
                 "name": "👌剧圈圈| APP[影视1080P]",
                 "type": 3,
