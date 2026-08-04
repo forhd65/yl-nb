@@ -52,7 +52,7 @@
             "filterable": 1,
             "jar": "./库库家.jar"
         }, {
-            "key": "爱腾讯",
+            "key": "tengteng",
             "name": "👌tengteng[1080P&&4k]",
             "type": 3,
             "api": "./drpy2.min.js",
@@ -68,7 +68,7 @@
         },
 		{
           "key": "aeete影视 PY",
-          "name": "aeete影视丨[官源1080P]",
+          "name": "aeete影视丨[1080P]",
           "api": "./aeete影视.py",
           "filterable": 1,
           "quickSearch": 1,
@@ -77,7 +77,7 @@
         },
 		{
             "key": "韩剧狗 PY",
-            "name": "👌韩剧狗丨[官源1080P]",
+            "name": "👌韩剧狗丨[1080P]",
             "api": "./韩剧狗.py",
             "filterable": 1,
             "quickSearch": 1,
