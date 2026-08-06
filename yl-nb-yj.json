@@ -1516,11 +1516,8 @@
                     "name": "解析1",
                     "type": 1,
                     "url": "http://ui6.970088.xyz/api.php?laiyuan=jiying&key=aini&url="
-                }, {
-                    "name": "解析2",
-                    "type": 1,
-                    "url": "https://nm.4688888.xyz/niuma.php?key=dfl&url="
-                }, {
+                }, 
+				{
                     "name": "VIP解析(随机4k)",
                     "type": 1,
                     "url": "https://vip.jiexi.dpdns.org/?url="
