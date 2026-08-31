@@ -44,7 +44,17 @@
             "quickSearch": 1,
             "filterable": 1,
             "jar": "./果果家.jar"
-        }, {
+        }, 
+		{
+            "key": "果果家②PY",
+            "name": "guoguo②丨[1080P&&4k]",
+            "api": "./py/T3芒果TV.py",
+            "filterable": 1,
+            "quickSearch": 1,
+            "searchable": 1,
+            "type": 3
+        },
+		{
             "key": "csp-youku",
             "name": "👌kuku[1080P]",
             "type": 3,
