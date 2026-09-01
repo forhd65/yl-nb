@@ -35,20 +35,11 @@
             "quickSearch": 1,
             "filterable": 1,
             "jar": "./琪琪家.jar"
-        }, {
-            "key": "csp_mgtv",
-            "name": "👌guoguo[1080P&&4k]",
-            "type": 3,
-            "api": "csp_mgtv",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "jar": "./果果家.jar"
         }, 
 		{
             "key": "果果家②PY",
-            "name": "guoguo②丨[1080P&&4k]",
-            "api": "./py/T3芒果TV.py",
+            "name": "guoguo丨[1080P&&4k]",
+            "api": "./T3芒果TV.py",
             "filterable": 1,
             "quickSearch": 1,
             "searchable": 1,
