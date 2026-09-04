@@ -368,6 +368,33 @@
                 "filterable": 1,
                 "playerType": 2
             }, 
+			                {
+            "key": "美剧窝PY",
+            "name": "👌美剧窝丨[美剧]",
+            "api": "./美剧窝.py",
+            "filterable": 1,
+            "quickSearch": 1,
+            "searchable": 1,
+            "type": 3
+        },
+                        {
+            "key": "美剧天堂PY",
+            "name": "👌美剧天堂丨[美剧]",
+            "api": "./美剧天堂.py",
+            "filterable": 1,
+            "quickSearch": 1,
+            "searchable": 1,
+            "type": 3
+        },
+                                {
+            "key": "美剧迷PY",
+            "name": "👌美剧迷丨[美剧]",
+            "api": "./美剧迷.py",
+            "filterable": 1,
+            "quickSearch": 1,
+            "searchable": 1,
+            "type": 3
+        },
 			 {
             "key": "csp_Panta91",
             "name": "👀盘Ta┃YD",
