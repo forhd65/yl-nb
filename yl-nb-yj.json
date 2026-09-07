@@ -248,54 +248,7 @@
                 "api": "csp_XBPQ",
                 "jar": "./1118.jar",
                 "ext": "./kkys.json"
-            }, {
-                "key": "奈飞电影",
-                "name": "奈飞电影[影视1080P]",
-                "type": 3,
-                "api": "csp_XBPQ",
-                "timeout": 60,
-                "ext": "./奈飞工厂.txt",
-                "jar": "./0816.jar",
-                "类型": "电影"
-            }, {
-                "key": "柠檬",
-                "name": "👌柠檬|[影视1080P]",
-                "type": 3,
-                "api": "csp_Nmvod",
-                "playerType": 2,
-                "jar": "./柠檬.jar",
-                "ext": "7lj763gg402i7942503g839jg74h8h88highi40799jh6i6k454419l0l5184k0g549h0kg2i01i838i2h42g891lgg1"
-            },  {
-                "key": "csp_SaoHuo",
-                "name": "👌骚火|[影视1080P]",
-                "type": 3,
-                "jar": "./骚火🔥.jar",
-                "api": "csp_SaoHuo"
-            },  {
-                "key": "csp_Kan90",
-                "name": "😃最全┃短剧[短剧]",
-                "type": 3,
-                "jar": "./源力.jar",
-                "api": "csp_Kan90",
-                "timeout": 60,
-                "searchable": 1,
-                "quickSearch": 1,
-                "changeable": 0,
-                "类型": "短剧"
-            }, {
-                "key": "全能短剧",
-                "name": "😒短剧┃AI¹[短剧]",
-                "type": 3,
-                "jar": "./源力.jar",
-                "api": "csp_DuanJuCen",
-                "searchable": 1,
-                "quickSearch": 1,
-                "changeable": 1,
-                "ext": {
-                    "classes": "./duanjucen.json"
-                },
-                "类型": "短剧"
-            }, {
+            },   {
                 "key": "七味短剧",
                 "name": "😄极速┃[短剧]",
                 "type": 3,
@@ -316,15 +269,6 @@
                 "filterable": 1,
                 "genre": "shortdrama"
             }, 
-			 {
-            "key": "🔴果PY",
-            "name": "👌🔴果丨[短剧]",
-            "api": "./hongguo.py",
-            "filterable": 1,
-            "quickSearch": 1,
-            "searchable": 1,
-            "type": 3
-        },
 			{
                 "key": "剧圈圈⁹⁹",
                 "name": "👌剧圈圈| APP[影视1080P]",
