@@ -1,37 +1,160 @@
 var rule = {
     title: '腾云驾雾[官]',
     host: 'https://v.%71%71.com',
-    // homeUrl: '/x/bu/pagesheet/list?_all=1&append=1&channel=choice&listpage=1&offset=0&pagesize=21&iarea=-1&sort=18',
-    homeUrl: '/x/bu/pagesheet/list?_all=1&append=1&channel=cartoon&listpage=1&offset=0&pagesize=21&iarea=-1&sort=18',
+    // 旧 pagesheet 接口已 404,首页与分类改用新版 getPage 接口(见 _qqFetchPage)
+    homeUrl: '/channel/choice',
     detailUrl: 'https://node.video.%71%71.com/x/api/float_vinfo2?cid=fyid',
     searchUrl: '/x/search/?q=**&stag=fypage',
-    searchUrl: 'https://pbaccess.video.%71%71.com/trpc.videosearch.smartboxServer.HttpRountRecall/Smartbox?query=**&appID=3172&appKey=lGhFIPeD3HsO9xEp&pageNum=(fypage-1)&pageSize=10',
     searchable: 2,
-    filterable: 1,
+    filterable: 0,
     multi: 1,
-    // url:'/channel/fyclass?listpage=fypage&channel=fyclass&sort=18&_all=1',
-    url: '/x/bu/pagesheet/list?_all=1&append=1&channel=fyclass&listpage=1&offset=((fypage-1)*21)&pagesize=21&iarea=-1',
-    // filter_url: 'sort={{fl.sort or 18}}&year={{fl.year}}&pay={{fl.pay}}',
-    // filter_url: 'sort={{fl.sort or 75}}&year={{fl.year}}&pay={{fl.pay}}',
-    filter_url: 'sort={{fl.sort or 75}}&iyear={{fl.iyear}}&year={{fl.year}}&itype={{fl.type}}&ifeature={{fl.feature}}&iarea={{fl.area}}&itrailer={{fl.itrailer}}&gender={{fl.sex}}',
-    // filter: 'H4sIAAAAAAAAA+2UzUrDQBCA32XOEZLUJrGvIj0saaDBNisxBkIJCG3Fi4oepIg3EQoieqiH+vM23Zq+hRuaZLZ4ce9z2/lmd2d2+NgR+H0e+gF0DkdwFGTQgRMeJ2BAxIaSwvrqVnxcyzhlg9PttqjED2c/45cSy8DyIDcavr57q/lBw8XTd/E6qbnT8M3zTFyc72RtC/Jumd+2c8wy7KZ4nxSL5Z9uxHS+Gc+r83sWVp1eVttl4Dluk1h93YubWZVwduplAYuxoFguVp+P/y5om/Z+/YxyqfAW8pbKbeS2yi3kO/ebyE2Fy1nXXBm7DDzknspd5K7KHeSOytvI2+XAugYkKWlD2mhrM+RpSB8OmaNvTsriMEgycofc0XbHZ3HCeUTukDv67vTDQY/MIXO0zelxn5M4JI6mOPkvgswSEpgPAAA=',
-    filter: 'H4sIAAAAAAAAA+1Y3U8aWRT/X+ZZEwYEtI9207Rp0r40+9CNDxM7G8laaZCamsYEinyoDYp1sa1I/aJSK4ita3Eo9J+Ze2fmv9g7yOWc22u3xJX0RZ7gd+ee7/M7h3mujE+EQ+O6cuOP58pf+qxyQ5kOR6LKgDKlPWaoQrOrxFhmv2e0yafnj025cCFmJSouzH4E/crcQBen+VoHH/Z1cVJq2kfzHFeVuTH35FxhaFbXIqCRnJ2YjV1JI0mWnUS5I2FQ7Ur2erxDHbT9FeE+wH0Y9wLuxbgKuCDfA7gH4epIF2dfET4M+DDGg4AHMR4APIBxP+B+N2JjA0p0pi+ZCo5cnCnXHpSpP3Ut+jSig07ruEGKSz3nysoc00SSywaVy3v2LochI/TFoZXPdWBIoJNokvqLDgz5JtVTYnA/wU2SL5CF/Q4M0TW/bpFSmnsPKivvzdYWL1MQktqg69xACBXdTNi1Je4OlIaz+YHkmhxH7mdrpFrkOPJoc5W+LnEcXLJeZsFIFXyy9nPkrIFSxPGPRboY43gQ6Z1Hzw9fN98lm+9xeCb0S5kyOvvkfzTf4pHVPJD7ZvGYfFuXmk/oG9XDPqguExV7O4bOAurFTdu+B9kR2989+1FNsyMVEUF8hcby+MyDzC9ba8I9FOLMa9NYwPogwwJdtO9BVTDHRTtRpbKG/M5OkCmwR/sMcVw2RZY/YZlwZsfi1kIa34NysEvfIJsIrtZI82/xltsfqFiuG7vnxp7RIiE9OtuX1naDdM23l0rLuBaJhsNTv5JxtYiuoWwVauSl0XO2SCrJbkjrDl0v0cKhvO4c7lutrNTpJHlqNjj5DV3hOMBLAeJozMNQYCK1IetSq86bD5LRjHlpng8VlIGVonWYkwMSX2KjQVrGnMoamPKDLQfVqDh5gjjcpF6Xtyi6tU02uhMAyS+8Mw0DbUv8+WzZWknJW5rI7CiSjWWSrP93Pt0hd00OlyOHidDko/78GUJbAqaG7+brtP4M6Yvtk8zH3pmh9JlUeNugnlz7ArC3T0Tkw51xERGJFfqTAnVa87T6T8+WeAZ95FNccnxoMAAwWBIcHAEY7FY9DDUbJbO+KK+zybJg1TmjtCvmUXg83J+CEWk5FI1ooUkdxyltkFdxmj/rOU6jozelIJGNpru1FmpAQ+D37dH7PE4qsvPe7btyftuE5ezknPgriXTvPPidy/H7ELlmd6yTHeEO0wPqH/52C2DoHzvZsqtHdvqAZE5lBiYrGbNZoAWDFnmPBS6uQv/VzT1mjDV/KsWPjV5n9113mwZ8r2V+fSuVIJsQNJ+WjRZmAX5/YBpLUiLYrIVJBvxon+yw2SEPGpYDmLX4dUDzgG5npEyKbwPQnrGepDAP2/09NvcvaIIuCAgUAAA=',
+    // 分类 URL 仅用于框架生成 MY_URL,实际请求由 一级 JS 函数完成(fyclass/fypage 占位保留)
+    url: '/channel/fyclass?page=fypage',
     headers: {
         'User-Agent': 'PC_UA'
     },
     timeout: 5000,
-    // class_parse:'.site_channel a;a&&Text;a&&href;channel/(.*)',
     cate_exclude: '会员|游戏|全部',
-    // class_name: '精选&电视剧&电影&综艺&动漫&少儿&纪录片',
-    // class_url: 'choice&tv&movie&variety&cartoon&child&doco',
     class_name: '精选&电影&电视剧&综艺&动漫&少儿&纪录片',
     class_url: 'choice&movie&tv&variety&cartoon&child&doco',
     limit: 20,
-    // play_parse:true,
-    // 手动调用解析请求json的url,此lazy不方便
+    // 分类标识 -> 腾讯频道 page_id
+    _qqChannelMap: {
+        choice: '100101',
+        movie: '100173',
+        tv: '100113',
+        variety: '100109',
+        cartoon: '100119',
+        child: '100150',
+        doco: '100105'
+    },
+    // 拉取一个频道页,返回 {items, ctx, hasNext}
+    _qqFetchPage: function (channelId, pageContext) {
+        let g = (Date.now().toString(16) + Math.random().toString(16).slice(2) + Math.random().toString(16).slice(2)).slice(0, 16);
+        let url = "https://pbaccess.video.%71%71.com/trpc.vector_layout.page_view.PageService/getPage?video_appid=3000010&vversion_platform=2&vdevice_guid=" + g;
+        let body = {
+            page_params: {
+                page_type: "channel",
+                page_id: String(channelId),
+                scene: "channel",
+                new_mark_label_enabled: "1",
+                ad_exp_ids: "",
+                ams_cookies: "",
+                skip_privacy_types: "",
+                support_click_scan: "1",
+                ad_trans_data: '{"ad_request_id":"' + g + '","game_sessions":[]}'
+            },
+            page_bypass_params: {
+                params: {
+                    platform_id: "2",
+                    caller_id: "3000010",
+                    data_mode: "default",
+                    user_mode: "default",
+                    specified_strategy: "",
+                    page_type: "channel",
+                    page_id: String(channelId),
+                    scene: "channel",
+                    new_mark_label_enabled: "1"
+                },
+                scene: "channel",
+                app_version: "",
+                abtest_bypass_id: g
+            },
+            page_context: pageContext || null
+        };
+        let headers = {
+            "Content-Type": "application/json;charset=UTF-8",
+            "Referer": "https://v.qq.com/",
+            "Origin": "https://v.qq.com"
+        };
+        let json = JSON.parse(post(url, {
+            body: JSON.stringify(body),
+            headers: headers
+        }));
+        let data = json.data || {};
+        let items = [];
+        let cards = data.CardList || [];
+        for (let i = 0; i < cards.length; i++) {
+            let cl = cards[i].children_list;
+            if (cl && cl.list && cl.list.cards) {
+                let arr = cl.list.cards;
+                for (let j = 0; j < arr.length; j++) {
+                    let p = arr[j].params || {};
+                    if (p.cid) {
+                        items.push({
+                            cid: p.cid,
+                            title: p.title || "",
+                            img: p.image_url_vertical || p.image_url || "",
+                            desc: [p.areaName, p.year, p.sub_title].filter(function (x) {
+                                return !!x;
+                            }).join(" ")
+                        });
+                    }
+                }
+            }
+        }
+        return {
+            items: items,
+            ctx: data.page_context || null,
+            hasNext: !!data.has_next_page
+        };
+    },
     lazy: 'js:input="https://cache.json.icu/home/api?type=ys&uid=292796&key=fnoryABDEFJNPQV269&url="+input.split("?")[0];log(input);let html=JSON.parse(request(input));log(html);input=html.url||input',
-    推荐: '.list_item;img&&alt;img&&src;a&&Text;a&&data-float',
-    一级: '.list_item;img&&alt;img&&src;a&&Text;a&&data-float',
+    推荐: $js.toString(() => {
+        let d = [];
+        try {
+            let r = rule._qqFetchPage(rule._qqChannelMap.choice, null);
+            d = r.items.map(function (it) {
+                return {
+                    title: it.title,
+                    img: it.img,
+                    url: "https://node.video.%71%71.com/x/api/float_vinfo2?cid=" + it.cid,
+                    desc: it.desc
+                };
+            });
+        } catch (e) {
+            log("QQ首页接口异常:" + e.message);
+        }
+        setResult(d);
+    }),
+    一级: $js.toString(() => {
+        let d = [];
+        let tid = (typeof MY_CATE == "undefined") ? "choice" : MY_CATE;
+        let pg = (typeof MY_PAGE == "undefined") ? 1 : (parseInt(MY_PAGE) || 1);
+        let channelId = rule._qqChannelMap[tid] || rule._qqChannelMap.choice;
+        // getPage 是游标分页,page_context 按频道+页码缓存,避免每次从第1页走到目标页
+        rule._qqCtx = rule._qqCtx || {};
+        let cache = rule._qqCtx[channelId] || (rule._qqCtx[channelId] = {});
+        let ctx = null;
+        let start = 1;
+        for (let p = pg - 1; p >= 1; p--) {
+            if (cache[p]) {
+                ctx = cache[p];
+                start = p + 1;
+                break;
+            }
+        }
+        try {
+            let last = [];
+            for (let p = start; p <= pg; p++) {
+                let r = rule._qqFetchPage(channelId, ctx);
+                ctx = r.ctx;
+                cache[p] = ctx;
+                last = r.items;
+            }
+            d = last.map(function (it) {
+                return {
+                    title: it.title,
+                    img: it.img,
+                    url: "https://node.video.%71%71.com/x/api/float_vinfo2?cid=" + it.cid,
+                    desc: it.desc
+                };
+            });
+        } catch (e) {
+            log("QQ分类接口异常:" + e.message);
+        }
+        setResult(d);
+    }),
     二级: $js.toString(() => {
         VOD = {};
         let d = [];
@@ -82,14 +205,38 @@ var rule = {
             let json = JSON.parse(html);
             video_lists = json.c.video_ids;
             let url = "https://v.qq.com/x/cover/" + sourceId + ".html";
-            if (video_lists.length === 1) {
+            if (json.c.type === 10) {
+                // 综艺栏目优先按季(range)取完整选集,接口不可用时降级到video_ids
+                try {
+                    let colUrl = "https://s.video.qq.com/get_playsource?id=" + json.c.column_id + "&plat=2&type=2&data_type=3&video_type=8&plname=qq&otype=json";
+                    eval(fetch(colUrl, fetch_params));
+                    let indexList = QZOutputJson.PlaylistItem.indexList || [];
+                    indexList.forEach(function (range) {
+                        let epUrl = "https://s.video.qq.com/get_playsource?id=" + json.c.column_id + "&plat=2&type=4&data_type=3&range=" + range + "&video_type=10&plname=qq&otype=json";
+                        eval(fetch(epUrl, fetch_params));
+                        let vdata = QZOutputJson.PlaylistItem.videoPlayList || [];
+                        vdata.forEach(function (item) {
+                            d.push({
+                                title: item.title,
+                                pic_url: item.pic,
+                                desc: item.episode_number + "\t\t\t播放量：" + item.thirdLine,
+                                url: item.playUrl
+                            })
+                        })
+                    })
+                } catch (eCol) {
+                    log("综艺栏目选集接口异常,改用video_ids兜底:" + eCol.message);
+                    d = [];
+                }
+            }
+            if (d.length === 0 && video_lists.length === 1) {
                 let vid = video_lists[0];
                 url = "https://v.qq.com/x/cover/" + cid + "/" + vid + ".html";
                 d.push({
                     title: "在线播放",
                     url: url
                 })
-            } else if (video_lists.length > 1) {
+            } else if (d.length === 0 && video_lists.length > 1) {
                 for (let i = 0; i < video_lists.length; i += 30) {
                     video_list.push(video_lists.slice(i, i + 30))
                 }
@@ -111,11 +258,12 @@ var rule = {
                 })
             }
         }
-        let yg = d.filter(function (it) {
-            return it.type && it.type !== "正片"
-        });
+        let isYg = function (it) {
+            return it.type && it.type !== "正片" && it.type.indexOf("正片") === -1;
+        };
+        let yg = d.filter(isYg);
         let zp = d.filter(function (it) {
-            return !(it.type && it.type !== "正片")
+            return !isYg(it);
         });
         VOD.vod_play_from = yg.length < 1 ? "qq" : "qq$$$qq 预告及花絮";
         VOD.vod_play_url = yg.length < 1 ? d.map(function (it) {
@@ -128,55 +276,142 @@ var rule = {
     }),
     搜索: $js.toString(() => {
         let d = [];
-        pdfa = jsp.pdfa;
-        pdfh = jsp.pdfh;
-        pd = jsp.pd;
-        let html = request(input);
-        let baseList = pdfa(html, "body&&.result_item_v");
-        log(baseList.length);
-        baseList.forEach(function (it) {
-            let longText = pdfh(it, ".result_title&&a&&Text");
-            let shortText = pdfh(it, ".type&&Text");
-            let fromTag = pdfh(it, ".result_source&&Text");
-            let score = pdfh(it, ".figure_info&&Text");
-            let content = pdfh(it, ".desc_text&&Text");
-            // let url = pdfh(it, ".result_title&&a&&href");
-            let url = pdfh(it, "div&&r-data");
-            // log(longText);
-            // log(shortText);
-            // log('url:'+url);
-            let img = pd(it, ".figure_pic&&src");
-            url = "https://node.video.qq.com/x/api/float_vinfo2?cid=" + url.match(/.*\/(.*?)\.html/)[1];
-            log(shortText + "|" + url);
-            if (fromTag.match(/腾讯/)) {
-                d.push({
-                    title: longText.split(shortText)[0],
-                    img: img,
-                    url: url,
-                    content: content,
-                    desc: shortText + " " + score
-                })
-            }
-        });
-        setResult(d);
-    }),
-    搜索: $js.toString(() => {
-        let d = [];
-        let html = request(input);
-        let json = JSON.parse(html);
-        if (json.data.smartboxItemList.length > 0) {
-            let cid = json.data.smartboxItemList[0].basicDoc.id;
-            let url = 'https://node.video.qq.com/x/api/float_vinfo2?cid=' + cid;
-            let html1 = request(url);
-            let data = JSON.parse(html1);
-
+        let pg = (typeof MY_PAGE == "undefined") ? 1 : (parseInt(MY_PAGE) || 1);
+        let cidMap = {};
+        let postHeader = {
+            "Content-Type": "application/json;charset=UTF-8",
+            "Referer": "https://v.qq.com/",
+            "Origin": "https://v.qq.com"
+        };
+        function cleanHtml(s) {
+            return (s || "").replace(/<[^>]+>/g, "");
+        }
+        function addItem(cid, title, img, desc, content) {
+            if (!cid || cidMap[cid]) return;
+            cidMap[cid] = 1;
             d.push({
-                title: data.c.title,
-                img: data.c.pic,
-                url: url,
-                content: data.c.description,
-                desc: data.rec
+                title: title,
+                img: img,
+                url: "https://node.video.%71%71.com/x/api/float_vinfo2?cid=" + cid,
+                desc: desc || "",
+                content: content || ""
             });
+        }
+        // 旧 Smartbox GET 接口已失效(ret=35013),网页搜索页也已改为纯SPA,改用新版多端搜索 POST 接口
+        let searchApi = "https://pbaccess.video.%71%71.com/trpc.videosearch.mobile_search.MultiTerminalSearch/MbSearch?vversion_platform=2";
+        let reqUuid = (Date.now().toString(16) + Math.random().toString(16).slice(2) + Math.random().toString(16).slice(2)).slice(0, 16);
+        let body = {
+            version: "26022601",
+            clientType: 1,
+            filterValue: "",
+            uuid: reqUuid,
+            retry: 0,
+            query: KEY,
+            pagenum: pg - 1,
+            pagesize: 30,
+            queryFrom: 0,
+            searchDatakey: "",
+            transInfo: "",
+            isneedQc: true,
+            preQid: "",
+            isPrefetch: false,
+            adClientInfo: "",
+            extraInfo: {
+                isNewMarkLabel: "0",
+                multi_terminal_pc: "1",
+                themeType: "0",
+                sugRelatedIds: "{}",
+                appVersion: "",
+                frontVersion: "26060108"
+            },
+            featureList: ["DEFAULT_FEFEATURE", "PC_SHORT_VIDEOS_WATERFALL", "PC_WANT_EPISODE_V2", "PC_WANT_EPISODE"]
+        };
+        function fetchCovers(kw) {
+            body.query = kw;
+            body.pagenum = 0;
+            let json = JSON.parse(post(searchApi, {
+                body: JSON.stringify(body),
+                headers: postHeader
+            }));
+            let itemList = (json.data && json.data.normalList && json.data.normalList.itemList) || [];
+            itemList.forEach(function (it) {
+                if (it.doc && it.doc.dataType == 2 && it.videoInfo) {
+                    let vi = it.videoInfo;
+                    let desc = [vi.typeName, vi.year, cleanHtml(vi.subTitle)].filter(function (x) {
+                        return !!x;
+                    }).join(" ");
+                    addItem(it.doc.id, cleanHtml(vi.title), vi.imgUrl, desc, cleanHtml(vi.descrip));
+                }
+            });
+        }
+        try {
+            fetchCovers(KEY);
+        } catch (e) {
+            log("QQ多端搜索接口异常:" + e.message);
+        }
+        // 综艺/老剧等栏目在多端搜索中不返回,首页再用智能联想接口补充可播放的专辑/栏目
+        if (pg === 1) {
+            try {
+                let sugApi = "https://pbaccess.video.%71%71.com/trpc.videosearch.smartboxServer.SugRecallHttp/GetSugHttp";
+                let sugBody = {
+                    auth_info: {
+                        app_id: "3168",
+                        app_key: "Ve3Z02Uwte4AH4tJ"
+                    },
+                    plat_version: 15,
+                    version: "26022601",
+                    page_num: 0,
+                    page_size: 10,
+                    query: KEY,
+                    scene: 1
+                };
+                let sugJson = JSON.parse(post(sugApi, {
+                    body: JSON.stringify(sugBody),
+                    headers: postHeader
+                }));
+                let sugList = (sugJson.data && sugJson.data.result_list && sugJson.data.result_list.item_list) || [];
+                let textSug = [];
+                sugList.forEach(function (it) {
+                    try {
+                        let view = it.view || {};
+                        let doc = it.doc || {};
+                        let cid = "";
+                        let dt = doc.data_type;
+                        if (dt == 0 && /^(mzc|sdp)/.test(doc.id || "")) {
+                            cid = doc.id;
+                        } else if ((dt == 10 || dt == 77) && view.img_url) {
+                            // 系列节点本身不可播,但海报地址里带的是可播放的代表专辑cid
+                            let mm = view.img_url.match(/\/((?:mzc|sdp)[0-9a-z]{12}|[a-z][0-9a-z]{13})(?=\d{10,})/) || view.img_url.match(/\/((?:mzc|sdp)[0-9a-z]{12})/);
+                            if (mm) cid = mm[1];
+                        } else if (dt == 0 && !doc.id) {
+                            let lines = (view.lines || []).map(function (l) {
+                                return cleanHtml(l.text);
+                            }).filter(function (x) {
+                                return !!x;
+                            });
+                            if (lines[0]) textSug.push(lines[0]);
+                        }
+                        if (cid) {
+                            let lines = (view.lines || []).map(function (l) {
+                                return cleanHtml(l.text);
+                            }).filter(function (x) {
+                                return !!x;
+                            });
+                            addItem(cid, lines[0] || KEY, view.img_url, lines.slice(1).join(" "), "");
+                        }
+                    } catch (e2) {}
+                });
+                // 宽泛词多端搜索只回短视频时,用联想词再召回一次专辑
+                if (d.length === 0) {
+                    for (let i = 0; i < textSug.length && d.length === 0 && i < 2; i++) {
+                        try {
+                            fetchCovers(textSug[i]);
+                        } catch (e3) {}
+                    }
+                }
+            } catch (e) {
+                log("QQ智能联想接口异常:" + e.message);
+            }
         }
         setResult(d);
     })
