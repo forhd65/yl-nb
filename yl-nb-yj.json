@@ -56,7 +56,24 @@
             "type": 3,
             "api": "./drpy2.min.js",
             "ext": "./qq.js"
-        }, {
+        }, 
+		{
+          "key": "小霸王",
+          "name": "🎮小霸王[游戏]",
+          "type": 3,
+          "api": "csp_Yikm",
+          "searchable": 1,
+          "quickSearch": 1,
+          "filterable": 1,
+          "changeable": 0,
+          "style": {
+            "type": "rect",
+            "ratio": 0.75
+          },
+          "timeout": 60,
+          "jar": "./aidaox-gongju-20260914-161201.jar"
+		},
+		{
             "key": "aeete影视 PY",
             "name": "aeete影视丨[1080P]",
             "api": "./aeete影视.py",
