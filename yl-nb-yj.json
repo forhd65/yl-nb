@@ -5,7 +5,7 @@
     "wallpaper": "http://饭太硬.top/深色壁纸/api.php",
     "sites": [{
             "key": "csp_Douban",
-            "name": "源力内部版，禁止传播，法律责任自负，切用且珍惜",
+            "name": "源力内部版，禁止传播，法律责任自负，切用且珍惜，扫码4k，需要配置中心网盘app扫码，配置一次一直使用",
             "type": 3,
             "api": "csp_Douban",
             "searchable": 0,
@@ -15,7 +15,7 @@
             "ext": "./douban.json"
         }, {
             "key": "配置中心",
-            "name": "🔨网盘丨配置中心",
+            "name": "🔨网盘丨配置中心扫码4k",
             "type": 3,
             "api": "csp_Config",
             "searchable": 0,
@@ -26,7 +26,7 @@
             }
         }, {
             "key": "csp_iqiyi",
-            "name": "👌qiqi[1080P]",
+            "name": "👌qiqi[影视1080P]",
             "type": 3,
             "api": "csp_iqiyi",
             "searchable": 1,
@@ -43,7 +43,7 @@
             "type": 3
         }, {
             "key": "csp-youku",
-            "name": "👌kuku[1080P]",
+            "name": "👌kuku[影视1080P]",
             "type": 3,
             "api": "csp_youku",
             "searchable": 1,
@@ -75,7 +75,7 @@
 		},
 		{
             "key": "aeete影视 PY",
-            "name": "aeete影视丨[1080P]",
+            "name": "aeete影视丨[影视1080P]",
             "api": "./aeete影视.py",
             "filterable": 1,
             "quickSearch": 1,
@@ -83,7 +83,7 @@
             "type": 3
         }, {
             "key": "韩剧狗 PY",
-            "name": "👌韩剧狗丨[1080P]",
+            "name": "👌韩剧狗丨[影视1080P]",
             "api": "./韩剧狗.py",
             "filterable": 1,
             "quickSearch": 1,
@@ -321,7 +321,7 @@
             "type": 3
         }, {
             "key": "玩耦",
-            "name": "👀玩偶｜[4K扫码]",
+            "name": "👀玩偶高码4k｜[4K扫码]",
             "type": 3,
             "api": "csp_Wogg",
             "searchable": 1,
@@ -339,7 +339,7 @@
             "timeout": 60
         }, {
             "key": "木偶",
-            "name": "👀木偶｜[4K扫码]",
+            "name": "👀木偶高码4k｜[4K扫码]",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -357,7 +357,7 @@
             "timeout": 60
         }, {
             "key": "快映",
-            "name": "👀快映｜[4K扫码]",
+            "name": "👀快映高码4k｜[4K扫码]",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -372,7 +372,7 @@
             "timeout": 60
         }, {
             "key": "蜡笔",
-            "name": "👀蜡笔｜[4K扫码]",
+            "name": "👀蜡笔高码4k｜[4K扫码]",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -390,7 +390,7 @@
             "timeout": 60
         }, {
             "key": "至臻",
-            "name": "👀至臻｜[4K扫码]",
+            "name": "👀至臻高码4k｜[4K扫码]",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -407,7 +407,7 @@
             "timeout": 60
         }, {
             "key": "多多",
-            "name": "👀多多｜[4K扫码]",
+            "name": "👀多多高码4k｜[4K扫码]",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -424,7 +424,7 @@
             "timeout": 60
         }, {
             "key": "二小",
-            "name": "👀二小｜[4K扫码]",
+            "name": "👀二小高码4k｜[4K扫码]",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -441,7 +441,7 @@
             "timeout": 60
         }, {
             "key": "虎斑",
-            "name": "👀虎斑｜[4K扫码]",
+            "name": "👀虎斑高码4k｜[4K扫码]",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -456,7 +456,7 @@
             "timeout": 60
         }, {
             "key": "短木",
-            "name": "👀短木丨[4K扫码]",
+            "name": "👀短木高码4k丨[4K扫码]",
             "type": 3,
             "api": "csp_PanWebShare",
             "searchable": 1,
@@ -471,7 +471,7 @@
             "timeout": 60
         }, {
             "key": "盘它",
-            "name": "👀移动｜[4K扫码]",
+            "name": "👀移动高码4k｜[4K扫码]",
             "type": 3,
             "api": "csp_PanWebSharePT",
             "searchable": 1,
@@ -484,7 +484,7 @@
             "timeout": 60
         }, {
             "key": "指南",
-            "name": "👀指南｜[4K扫码]",
+            "name": "👀指南高码4k｜[4K扫码]",
             "type": 3,
             "api": "csp_4KZhinan",
             "searchable": 1,
@@ -493,7 +493,7 @@
             "timeout": 60
         }, {
             "key": "人人",
-            "name": "👀人人｜[4K扫码]",
+            "name": "👀人人高码4k｜[4K扫码]",
             "type": 3,
             "api": "csp_RenRen",
             "searchable": 1,
@@ -502,7 +502,7 @@
             "timeout": 60
         }, {
             "key": "双星",
-            "name": "👀双星｜[4K扫码]",
+            "name": "👀双星高码4k｜[4K扫码]",
             "type": 3,
             "api": "csp_ShuangXing",
             "searchable": 1,
@@ -616,7 +616,7 @@
             "type": 3
         }, {
             "key": "py_yymp3",
-            "name": "🎶yymp3|音乐[音乐]",
+            "name": "🎶yymp3|[音乐]",
             "api": "./YYMP3音乐网.py",
             "filterable": 1,
             "timeout": 60,
@@ -634,12 +634,12 @@
             "filterable": 0
         }, {
             "key": "网易云音乐有MV",
-            "name": "🐬网易云有MV｜音乐[音乐]",
+            "name": "🐬网易云有MV｜[音乐]",
             "type": 3,
             "api": "./网易云-有MV.py"
         }, {
             "key": "爱玩音乐",
-            "name": "爱玩🎤音乐[音乐]",
+            "name": "爱玩🎤|[音乐]",
             "api": "./爱玩音乐.py",
             "filterable": 1,
             "quickSearch": 1,
@@ -663,7 +663,7 @@
             "type": 3
         }, {
             "key": "hige-捐赠版 | [音乐]",
-            "name": "👌hige-捐赠版丨PY",
+            "name": "👌hige-捐赠版丨[音乐]",
             "api": "./hige-捐赠版.py",
             "filterable": 1,
             "quickSearch": 1,
