@@ -225,7 +225,14 @@
             "quickSearch": 1,
             "searchable": 1,
             "type": 3
-        }, {
+        }, 
+		{
+            "key": "新₄ᴋ⁽ᵖʰᵖ⁾┃[4k]",
+            "name": "新4k[4k影视]",
+            "type": 1,
+            "api": "http://cmsyun2.qijiyun.vip/api.php/provide/vod/"
+        },
+		{
             "key": "好好看App",
             "name": "好好看App[影视1080P]",
             "type": 3,
