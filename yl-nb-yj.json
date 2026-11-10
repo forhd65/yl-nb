@@ -56,8 +56,7 @@
             "type": 3,
             "api": "./drpy2.min.js",
             "ext": "./qq.js"
-        }, 
-		{
+        }, {
             "key": "红果new PY",
             "name": "👌红果短剧|[短剧]",
             "api": "./红果短剧new.py",
@@ -65,24 +64,46 @@
             "quickSearch": 1,
             "searchable": 1,
             "type": 3
-        },
-		{
-          "key": "小霸王",
-          "name": "🎮小霸王[游戏]",
-          "type": 3,
-          "api": "csp_Yikm",
-          "searchable": 1,
-          "quickSearch": 1,
-          "filterable": 1,
-          "changeable": 0,
-          "style": {
-            "type": "rect",
-            "ratio": 0.75
-          },
-          "timeout": 60,
-          "jar": "./aidaox-gongju-20260914-161201.jar"
-		},
-		{
+        }, {
+            "key": "红果短剧修复版.py",
+            "name": "👌红果短剧线路一丨[短剧",
+            "api": "./红果短剧修复版.py",
+            "filterable": 1,
+            "quickSearch": 1,
+            "searchable": 1,
+            "type": 3
+        }, {
+            "key": "红果(显季优化版).py",
+            "name": "👌红果短剧线路二丨[短剧",
+            "api": "./红果(显季优化版).py",
+            "filterable": 1,
+            "quickSearch": 1,
+            "searchable": 1,
+            "type": 3
+        }, {
+            "key": "红果_酒亓3.py",
+            "name": "👌红果短剧线路三丨[短剧",
+            "api": "./红果_酒亓3.py",
+            "filterable": 1,
+            "quickSearch": 1,
+            "searchable": 1,
+            "type": 3
+        }, {
+            "key": "小霸王",
+            "name": "🎮小霸王[游戏]",
+            "type": 3,
+            "api": "csp_Yikm",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 0,
+            "style": {
+                "type": "rect",
+                "ratio": 0.75
+            },
+            "timeout": 60,
+            "jar": "./aidaox-gongju-20260914-161201.jar"
+        }, {
             "key": "aeete影视 PY",
             "name": "aeete影视丨[影视1080P]",
             "api": "./aeete影视.py",
@@ -234,14 +255,12 @@
             "quickSearch": 1,
             "searchable": 1,
             "type": 3
-        }, 
-		{
+        }, {
             "key": "新₄ᴋ⁽ᵖʰᵖ⁾┃[4k]",
             "name": "新4k[4k影视]",
             "type": 1,
             "api": "http://cmsyun2.qijiyun.vip/api.php/provide/vod/"
-        },
-		{
+        }, {
             "key": "好好看App",
             "name": "好好看App[影视1080P]",
             "type": 3,
@@ -1195,7 +1214,7 @@
             "url": "http://ui6.970088.xyz/api.php?laiyuan=jiying&key=aini&url="
         }, {
             "name": "解析1",
-			"type": 1,
+            "type": 1,
             "url": "https://jx.xmflv.cc/?url="
         }, {
             "name": "解析2",
@@ -1288,8 +1307,7 @@
             }
         }
     ],
-    "lives": [
-	  {
+    "lives": [{
             "name": "🌈凤凰MoMo",
             "type": 0,
             "url": "https://v4.gh-proxy.com/https://raw.githubusercontent.com/jn950/live/refs/heads/main/tv/pllive.txt",
@@ -1297,8 +1315,7 @@
             "logo": "https://gongdian.top/tv/taibiao/{name}.png",
             "playerType": 2,
             "timeout": 10
-        }, 
-	  {
+        }, {
             "name": "源力zb1",
             "type": 0,
             "url": "./ylzb-zy.txt",
