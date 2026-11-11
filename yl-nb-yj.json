@@ -89,29 +89,6 @@
             "searchable": 1,
             "type": 3
         }, {
-            "key": "小霸王",
-            "name": "🎮小霸王[游戏]",
-            "type": 3,
-            "api": "csp_Yikm",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 0,
-            "style": {
-                "type": "rect",
-                "ratio": 0.75
-            },
-            "timeout": 60,
-            "jar": "./aidaox-gongju-20260914-161201.jar"
-        }, {
-            "key": "aeete影视 PY",
-            "name": "aeete影视丨[影视1080P]",
-            "api": "./aeete影视.py",
-            "filterable": 1,
-            "quickSearch": 1,
-            "searchable": 1,
-            "type": 3
-        }, {
             "key": "韩剧狗 PY",
             "name": "👌韩剧狗丨[影视1080P]",
             "api": "./韩剧狗.py",
@@ -134,16 +111,6 @@
             "api": "csp_Gz360",
             "jar": "./yl6.jar"
         }, {
-            "key": "永乐JS",
-            "name": "👌永乐丨[影视1080P]",
-            "type": 3,
-            "api": "./永乐.js",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        }, {
             "key": "猎手PY",
             "name": "👌猎手丨[影视1080P]",
             "api": "./猎手.py",
@@ -163,14 +130,6 @@
             "key": "袋鼠PY",
             "name": "👌袋鼠丨[影视1080P]",
             "api": "./袋鼠.py",
-            "filterable": 1,
-            "quickSearch": 1,
-            "searchable": 1,
-            "type": 3
-        }, {
-            "key": "王者PY",
-            "name": "👌王者丨[影视1080P]",
-            "api": "./王者TV.py",
             "filterable": 1,
             "quickSearch": 1,
             "searchable": 1,
@@ -260,19 +219,7 @@
             "name": "新4k[4k影视]",
             "type": 1,
             "api": "http://cmsyun2.qijiyun.vip/api.php/provide/vod/"
-        }, {
-            "key": "好好看App",
-            "name": "好好看App[影视1080P]",
-            "type": 3,
-            "jar": "./hhk.jar",
-            "api": "csp_XBPQ",
-            "ext": {
-                "请求头": "User-Agent$MOBILE_UA",
-                "编码": "UTF-8",
-                "分类url": "https://www.lyjzedu.com/;;!",
-                "简介": "水印广告勿信，谨防诈骗"
-            }
-        }, {
+        },  {
             "key": "可可影视",
             "name": "可可[影视1080P]",
             "type": 3,
